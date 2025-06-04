@@ -2,6 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
 import seaborn as sns
+import platform
+import os
 
 # --- OSに応じて日本語フォントを設定 ---
 os_name = platform.system()
