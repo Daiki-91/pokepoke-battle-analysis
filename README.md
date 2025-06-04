@@ -29,6 +29,11 @@
 ## 使用技術
 - Python (pandas, matplotlib, seaborn) 
 
+## 分析結果のサンプルイメージ
+
+![使用デッキ別勝率](images/winrate_by_deck.png)
+![デッキ毎の相性](images/deck_matchup_heatmap.png)
+
 ## 日本語フォントについて
 - 利用環境（macOS / Windows / Linux）に応じて、自動で適切な日本語フォントが設定されます。
 - 特別な設定は不要ですが、日本語フォントがインストールされていない環境ではグラフが正しく表示されないことがあります。
