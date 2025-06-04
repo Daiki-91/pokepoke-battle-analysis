@@ -3,8 +3,16 @@ import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
 import seaborn as sns
 
-# --- 日本語フォント設定（macOS向け） ---
-plt.rcParams['font.family'] = 'Hiragino Sans'
+# --- OSに応じて日本語フォントを設定 ---
+os_name = platform.system()
+
+if os_name == 'Darwin':  # macOS
+    plt.rcParams['font.family'] = 'Hiragino Sans'
+elif os_name == 'Windows':
+    plt.rcParams['font.family'] = 'Meiryo'
+else:  # Linuxなど
+    plt.rcParams['font.family'] = 'TakaoPGothic'
+
 plt.rcParams['axes.unicode_minus'] = False  # マイナス符号の文字化け対策
 
 # --- CSV読み込み（1行目をスキップ） ---
