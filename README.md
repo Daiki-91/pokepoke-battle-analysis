@@ -44,10 +44,9 @@
 
 ### 1. 仮想環境の作成（任意）
 
-```bash
 python -m venv venv
-source venv/bin/activate   # macOS/Linux
-venv\Scripts\activate      # Windows
+source venv/bin/activate # macOS/Linux
+venv\Scripts\activate # Windows
 
 ### 2. 依存ライブラリのインストール
 
@@ -78,7 +77,6 @@ collected 3 items
 pokepoke_test.py ... [100%]
 
 ============================== 3 passed in 0.03s ==============================
-
 
 ### 5. トラブルシューティング
 
